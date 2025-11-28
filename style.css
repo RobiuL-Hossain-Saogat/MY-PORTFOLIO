@@ -116,11 +116,11 @@ a{
 /* my image */
 #one .my-img{
     flex: 0 0 40%;
-    max-width: 40%;
+    max-width: 50%;
     text-align: center;
     position: relative;
 }
 
 #one .my-img img{
-    max-width: 50%;
+    max-width: 60%;
 }
