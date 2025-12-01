@@ -40,6 +40,35 @@ img{
     object-fit: cover;
 }
 
+.cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: black;
+    background-color: transparent;
+    border: 2px solid black;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 30px;
+    transition: 0.3s ease;
+    transition-property: background-color, color;
+}
+
+.cta:hover{
+    color: white;
+    background-color: black;
+}
+
+.brand h1{
+   font-size: 3rem; 
+   text-transform: uppercase;
+   color: white;
+}
+
+.brand h1 span{
+   color: rgb(0, 0, 0);
+}
+
 #one{
     background-image: url(./images/one.jpg);
     background-size: cover;
@@ -151,25 +180,6 @@ img{
 
 .section-title span{
     color: rgb(220, 84, 15);
-}
-
-.cta{
-    display: inline-block;
-    padding: 10px 30px;
-    color: black;
-    background-color: transparent;
-    border: 2px solid black;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    margin-top: 30px;
-    transition: 0.3s ease;
-    transition-property: background-color, color;
-}
-
-.cta:hover{
-    color: white;
-    background-color: black;
 }
 
 
@@ -409,7 +419,49 @@ img{
     font-weight: 500;
 }
 
+#footer{
+    background-image: linear-gradient(60deg,#0077ff 0%, #485563 100%);
+}
 
+#footer .footer{
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+#footer h2{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#footer .social-icon{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#footer .social-item{
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+}
+
+#footer .social-item img{
+    filter: grayscale(1);
+    transition: .3s ease filter;
+}
+
+#footer .social-item:hover img{
+    filter: grayscale(0);
+}
+
+#footer p{
+    color: white;
+}
 
 @keyframes text_reveal_box{
     50%{
