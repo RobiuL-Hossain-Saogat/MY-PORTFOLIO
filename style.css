@@ -43,9 +43,9 @@ img{
 .cta{
     display: inline-block;
     padding: 10px 30px;
-    color: black;
+    color: rgb(255, 255, 255);
     background-color: transparent;
-    border: 2px solid black;
+    border: 2px solid rgb(255, 255, 255);
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
@@ -55,8 +55,8 @@ img{
 }
 
 .cta:hover{
-    color: white;
-    background-color: black;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
 }
 
 .brand h1{
@@ -66,8 +66,9 @@ img{
 }
 
 .brand h1 span{
-   color: rgb(0, 0, 0);
+   color: rgb(145, 73, 73);
 }
+
 
 #header{
     position: fixed;
@@ -138,8 +139,62 @@ img{
     letter-spacing: initial;
 }
 
+#header .hamb{
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    cursor: pointer;
+    transform: scale(.8);
+    margin-right: 20px;
+}
+
+#header .hamb .bar{
+    height: 2px;
+    width: 30px;
+    position: relative;
+    background-color: white;
+    z-index: -1;
+}
+
+#header .hamb::after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border:3px solid white;
+    animation: hamb_puls 1s ease infinite;
+}
+
+#header .hamb .bar::after,
+
+#header .hamb .bar::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background-color: white;
+    transition: .3s ease;
+    transition-property: top, bottom;
+}
+
+#header .hamb .bar::after{
+    top: 8px;
+}
+#header .hamb .bar::before{
+    bottom: 8px;
+}
+
 #one{
-    background-image: url(./images/one.jpg);
+    background-image: url(./images/background.jpg);
     background-size: cover;
     background-position: top center;
 }
@@ -440,6 +495,10 @@ img{
     z-index: -1;
 }
 
+#about .cta{
+    border: 2px solid black;
+}
+
 #contact .contact{
     flex-direction: column;
     max-width: 1200px;
@@ -545,7 +604,7 @@ img{
 
 @keyframes text_reveal{
     100%{
-        color: black;
+        color:white;
     }
 }
 
