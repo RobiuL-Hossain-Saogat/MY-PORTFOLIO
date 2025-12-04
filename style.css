@@ -62,11 +62,11 @@ img{
 .brand h1{
    font-size: 3rem; 
    text-transform: uppercase;
-   color: white;
+   color: rgb(255, 255, 255);
 }
 
 .brand h1 span{
-   color: rgb(145, 73, 73);
+   color: rgb(195, 55, 55);
 }
 
 
@@ -79,9 +79,29 @@ img{
     height: auto;
 }
 
+#header .container {
+    max-width: 100%;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
 #header .header{
     min-height: 8vh;
     background-color:rgba(31, 30, 30, 0.24);
+    display: flex;
+    align-items: center;
+}
+
+#header .brand h1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin: 0;
+    padding: 0;
+    z-index: 2000;
+    color: rgb(244, 228, 176);
+    font-size: 3rem;
 }
 
 #header .nav-bar{
@@ -98,9 +118,9 @@ img{
     list-style: none;
     position: absolute;
     background-color: rgb(31, 30, 30);
-    width: 100vw;
+    width: 43vw;
     height: 100vh;
-    left: 0;
+    right: -100%;
     top: 0;
     display: flex;
     flex-direction: column;
@@ -108,6 +128,11 @@ img{
     align-items: center;
     z-index: 1;
     overflow-x: hidden;
+    transition: .5s ease ;
+}
+
+#header .nav-list ul.active{
+    right: 0;
 }
 
 #header .nav-list ul a{
@@ -142,17 +167,17 @@ img{
 #header .hamb{
     height: 60px;
     width: 60px;
-    display: inline-block;
-    border: 3px solid white;
+    border: 3px solid rgb(255, 255, 255);
     border-radius: 50%;
-    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 100;
     cursor: pointer;
     transform: scale(.8);
-    margin-right: 20px;
 }
 
 #header .hamb .bar{
@@ -191,6 +216,13 @@ img{
 }
 #header .hamb .bar::before{
     bottom: 8px;
+}
+
+#header .hamb.active .bar::after{
+    top: 0;
+}
+#header .hamb.active .bar::before{
+    bottom: 0;
 }
 
 #one{
