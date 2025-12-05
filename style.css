@@ -120,7 +120,7 @@ img{
     list-style: none;
     position: absolute;
     background-color: rgb(31, 30, 30);
-    border-radius: 30px;
+    border-radius: 6px;
     width: 43vw;
     height: 60vh;
     right: -100%;
@@ -145,8 +145,21 @@ img{
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-    padding: 20px;
+    padding: 12px 25px;
+    border-radius: 6px;
     display: block;
+    position: relative;
+    overflow: hidden;
+    transition: 
+        background 0.45s ease,
+        color 0.45s ease,
+        transform 0.35s ease;
+}
+
+#header .nav-list ul li a:hover {
+    background: linear-gradient(135deg, #c0392b, #f39c12);
+    color: #000;
+    transform: translateY(-2px); 
 }
 
 #header .nav-list ul a::after{
