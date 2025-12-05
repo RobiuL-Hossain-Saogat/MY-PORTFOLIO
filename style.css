@@ -7,6 +7,7 @@
 html{
     font-size: 10px;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 a{
@@ -91,6 +92,7 @@ img{
     background-color:rgba(31, 30, 30, 0.24);
     display: flex;
     align-items: center;
+    transition: .3s ease background-color;
 }
 
 #header .brand h1 {
@@ -118,8 +120,9 @@ img{
     list-style: none;
     position: absolute;
     background-color: rgb(31, 30, 30);
+    border-radius: 30px;
     width: 43vw;
-    height: 100vh;
+    height: 60vh;
     right: -100%;
     top: 0;
     display: flex;
@@ -338,10 +341,6 @@ img{
     color: rgb(220, 84, 15);
 }
 
-#services{
-    background: #f8fafc;
-}
-
 
 #services .section-bottom{
     display: flex;
@@ -394,10 +393,6 @@ img{
 
 #services .service-item p{
     color: white;
-}
-
-#projects{
-    background: #f8fafc;
 }
 
 #projects .projects{
@@ -481,10 +476,6 @@ img{
     transform: scale(1.1);
 }
 
-#about{
-    background-color: #f8fafc;;
-}
-
 #about .about{
     flex-direction: column-reverse;
     text-align: center;
@@ -524,7 +515,7 @@ img{
     height: 100%;
     width: 100%;
     position: relative;
-    border: 5px solid rgb(230, 148, 148);
+    border: 6px solid rgb(255, 113, 113);
 }
 
 #about .col-left .about-img::after{
@@ -534,7 +525,7 @@ img{
     top: 19px;
     height: 98%;
     width: 98%;
-    border: 7px solid rgb(197, 60, 60);
+    border: 7px solid rgb(225, 21, 21);
     z-index: -1;
 }
 
@@ -542,8 +533,8 @@ img{
     border: 2px solid black;
 }
 
-#contact{
-    background: #f8fafc;;
+#about .cta:hover{
+    background-color: black;
 }
 
 
