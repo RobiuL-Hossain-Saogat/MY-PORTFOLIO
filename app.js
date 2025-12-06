@@ -15,3 +15,10 @@ document.addEventListener('scroll', ()=>{
         header.style.backgroundColor='transparent';
     }
 });
+
+var typed=new Typed(".typing",{
+    strings:["I'm a CSE Student","I'm a Web Developer","I'm a Web Designer",],
+    typeSpeed:100,
+    Backspeed:60,
+    loop:true
+})

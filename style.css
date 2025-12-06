@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -6,7 +6,7 @@
 }
 html{
     font-size: 10px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif, 'Clicker Script';
     scroll-behavior: smooth;
 }
 
@@ -47,6 +47,7 @@ img{
     color: rgb(255, 255, 255);
     background-color: transparent;
     border: 2px solid rgb(255, 255, 255);
+    border-radius: 30px;
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
@@ -298,14 +299,18 @@ img{
 
 #one h1:nth-child(1){
     animation-delay: 1.5s;
+    font-family: 'Italiano';
 }
 
 #one h1:nth-child(2){
     animation-delay: 2.5s;
+    font-family: 'Italiano';
 }
 
 #one h1:nth-child(3){
     animation-delay: 3.5s;
+    font-size: 2.1rem;
+    font-family: 'Italiano';
 }
 
 #one h1 span{
@@ -667,7 +672,7 @@ img{
 
 @keyframes text_reveal{
     100%{
-        color:white;
+        color:rgb(255, 255, 255);
     }
 }
 
@@ -688,6 +693,10 @@ img{
     #one h1{
         font-size: 6rem
     }
+
+    #one h1:nth-child(3){
+            font-size: 5rem;
+        }
 
     #one img {
     width: 100%;
@@ -819,9 +828,18 @@ img{
             display: none;
         } 
 
+        #one h1:nth-child(3){
+            font-size: 5rem;
+        }
+
         #services .service-bottom .service-item{
             flex-basis: 22%;
             margin: 1.5%;
+        }
+    }
+    @media (min-width: 1024px){
+        #one h1:nth-child(3){
+            font-size: 5rem;
         }
     }
 }
