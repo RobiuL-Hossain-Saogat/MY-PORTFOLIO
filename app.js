@@ -22,3 +22,10 @@ var typed=new Typed(".typing",{
     Backspeed:60,
     loop:true
 })
+
+document.addEventListener('click', (e) => {
+    if (!hamb.contains(e.target) && !mobile_menu.contains(e.target)) {
+        hamb.classList.remove('active');
+        mobile_menu.classList.remove('active');
+    }
+});

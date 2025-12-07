@@ -123,9 +123,9 @@ img{
     background-color: rgb(31, 30, 30);
     border-radius: 6px;
     width: 43vw;
-    height: 60vh;
+    height: 70vh;
     right: -100%;
-    top: 0;
+    top: 58px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -543,7 +543,7 @@ img{
     top: 19px;
     height: 98%;
     width: 98%;
-    border: 7px solid rgb(225, 21, 21);
+    border: 7px solid rgb(255, 21, 21);
     z-index: -1;
 }
 
