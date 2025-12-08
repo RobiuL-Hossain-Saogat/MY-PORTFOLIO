@@ -242,13 +242,13 @@ img{
     bottom: 0;
 }
 
-#one{
+#home{
     background-image: url(./images/background.jpg);
     background-size: cover;
     background-position: top center;
 }
 
-#one .one{
+#home .home{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0, 50px;
@@ -256,7 +256,7 @@ img{
 }
 
 /* my image */
-#one .my-img {
+#home .my-img {
     flex: 0 0 30%;
     text-align: center;
     position: relative;
@@ -264,7 +264,7 @@ img{
     margin: auto;
 }
 
-#one .my-img img {
+#home .my-img img {
     width: 100%;        
     height: 100%;
     object-fit: cover;  
@@ -273,7 +273,7 @@ img{
     z-index: 2;
 }
 
-#one .my-img::after {
+#home .my-img::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -287,7 +287,7 @@ img{
 }
 
 
-#one h1{
+#home h1{
     display: block;
     width: fit-content;
     font-size: 2.5rem;
@@ -297,23 +297,23 @@ img{
     animation-delay: 1.5s;
 }
 
-#one h1:nth-child(1){
+#home h1:nth-child(1){
     animation-delay: 1.5s;
     font-family: 'Italiano';
 }
 
-#one h1:nth-child(2){
+#home h1:nth-child(2){
     animation-delay: 2.5s;
     font-family: 'Italiano';
 }
 
-#one h1:nth-child(3){
+#home h1:nth-child(3){
     animation-delay: 3.5s;
     font-size: 2.1rem;
     font-family: 'Italiano';
 }
 
-#one h1 span{
+#home h1 span{
     position: absolute;
     top: 0;
     left: 0;
@@ -324,20 +324,20 @@ img{
     animation-delay: 1s;
 }
 
-#one h1:nth-child(1) span{
+#home h1:nth-child(1) span{
     animation-delay: 1s;
 }
 
-#one h1:nth-child(2) span{
+#home h1:nth-child(2) span{
     animation-delay: 2s;
 }
 
-#one h1:nth-child(3) span{
+#home h1:nth-child(3) span{
     animation-delay: 3s;
 }
 
 
-#services .services{
+#educations .educations{
     flex-direction: column;
     text-align: center;
     max-width: 1500px;
@@ -360,7 +360,7 @@ img{
 }
 
 
-#services .section-bottom{
+#educations .section-bottom{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -368,7 +368,7 @@ img{
     margin-top: 50px;
 }
 
-#services .service-item{
+#educations .service-item{
     flex-basis: 80%;
     display: flex;
     align-items: flex-start;
@@ -384,7 +384,7 @@ img{
     overflow: hidden;
 }
 
-#services .service-item::after{
+#educations .service-item::after{
     content: '';
     position: absolute;
     left: 0;
@@ -396,20 +396,20 @@ img{
     z-index: -1;
 }
 
-#services .service-bottom .icon{
+#educations .service-bottom .icon{
     height: 80px;
     width: 80px;
     margin-bottom: 20px;
 }
 
-#services .service-item h2{
+#educations .service-item h2{
     font-size: 2rem;
     color: white;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
 
-#services .service-item p{
+#educations .service-item p{
     color: white;
 }
 
@@ -685,33 +685,33 @@ img{
         font-size: 6rem;
     }
 
-    #one {
+    #home {
     width: 100%;
     overflow: hidden;
     }
 
-    #one h1{
+    #home h1{
         font-size: 6rem
     }
 
-    #one h1:nth-child(3){
+    #home h1:nth-child(3){
             font-size: 5rem;
         }
 
-    #one img {
+    #home img {
     width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
     }
 
-    #services .service-bottom {
+    #educations .service-bottom {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
-    #services .service-bottom .service-item{
+    #educations .service-bottom .service-item{
         flex-basis: 45%;
         margin: 2.5%;
     }
@@ -828,17 +828,17 @@ img{
             display: none;
         } 
 
-        #one h1:nth-child(3){
+        #home h1:nth-child(3){
             font-size: 5rem;
         }
 
-        #services .service-bottom .service-item{
+        #educations .service-bottom .service-item{
             flex-basis: 22%;
             margin: 1.5%;
         }
     }
     @media (min-width: 1024px){
-        #one h1:nth-child(3){
+        #home h1:nth-child(3){
             font-size: 5rem;
         }
     }
