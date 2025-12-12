@@ -71,6 +71,25 @@ img{
    color: rgb(195, 55, 55);
 }
 
+.section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+.section-title span{
+    color: rgb(220, 84, 15);
+}
+
+.typed-cursor {
+    display: none !important;
+}
+
+
 
 #header{
     position: fixed;
@@ -303,11 +322,13 @@ img{
 }
 
 #home h1:nth-child(2){
+    animation: text_reveal1 .5s ease forwards;
     animation-delay: 2.5s;
     font-family: 'Italiano';
 }
 
 #home h1:nth-child(3){
+    animation: text_reveal2 .5s ease forwards;
     animation-delay: 3.5s;
     font-size: 2.1rem;
     font-family: 'Italiano';
@@ -343,20 +364,6 @@ img{
     max-width: 1500px;
     margin: 0 auto;
     padding: 100px 0;
-}
-
-.section-title{
-    font-size: 4rem;
-    font-weight: 300;
-    color: black;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-    text-align: center;
-}
-
-.section-title span{
-    color: rgb(220, 84, 15);
 }
 
 
@@ -555,6 +562,58 @@ img{
     background-color: black;
 }
 
+#achievement {
+    padding: 100px 0;
+    text-align: center;
+}
+
+
+.achievements {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.ach-card {
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+    transition: .3s ease box-shadow;
+}
+
+.ach-card:hover {
+    box-shadow: 0px 0px 5px 0 #0000002c;
+}
+
+.ach-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+    color: #00c6ff;
+    transition: 0.3s ease;
+}
+
+.ach-card h2 {
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.ach-card p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    opacity: 0.8;
+}
 
 #contact .contact{
     flex-direction: column;
@@ -672,7 +731,19 @@ img{
 
 @keyframes text_reveal{
     100%{
-        color:rgb(255, 255, 255);
+        color:#f0e8ea;
+    }
+}
+
+@keyframes text_reveal1{
+    100%{
+        color:#08d9d6;
+    }
+}
+
+@keyframes text_reveal2{
+    100%{
+        color:#f0db71;
     }
 }
 
@@ -764,6 +835,11 @@ img{
 
     #about .col-right h1{
         text-align: left;
+    }
+
+    .ach-card {
+        width: 30%;
+        margin: 20px 0;
     }
 
     #contact .contact{
