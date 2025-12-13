@@ -133,7 +133,7 @@ img{
     width: 100%;
     height: 100%;
     max-width: 1300px;
-    padding: 0 10px;
+    padding: 0 5px;
 }
 
 #header .nav-list ul{
@@ -141,7 +141,7 @@ img{
     position: absolute;
     background-color: rgb(31, 30, 30);
     border-radius: 6px;
-    width: 43vw;
+    width: 60vw;
     height: 70vh;
     right: -100%;
     top: 58px;
@@ -263,7 +263,7 @@ img{
 
 #home{
     background-image: url(./images/background.jpg);
-    background-size: cover;
+
     background-position: top center;
 }
 
@@ -357,6 +357,9 @@ img{
     animation-delay: 3s;
 }
 
+#educations{
+    background-image: url(./images/background5.jpg);
+}
 
 #educations .educations{
     flex-direction: column;
@@ -418,6 +421,10 @@ img{
 
 #educations .service-item p{
     color: white;
+}
+
+#projects{
+    background:#846b71;
 }
 
 #projects .projects{
@@ -501,6 +508,10 @@ img{
     transform: scale(1.1);
 }
 
+#about{
+    background-image: url(images/background5.jpg);
+}
+
 #about .about{
     flex-direction: column-reverse;
     text-align: center;
@@ -540,7 +551,7 @@ img{
     height: 100%;
     width: 100%;
     position: relative;
-    border: 6px solid rgb(255, 113, 113);
+    border: 6px solid rgb(244, 70, 70);
 }
 
 #about .col-left .about-img::after{
@@ -550,7 +561,7 @@ img{
     top: 19px;
     height: 98%;
     width: 98%;
-    border: 7px solid rgb(255, 21, 21);
+    border: 7px solid rgb(230, 8, 8);
     z-index: -1;
 }
 
@@ -560,6 +571,10 @@ img{
 
 #about .cta:hover{
     background-color: black;
+}
+
+.achievement-bg {
+    background:#846b71;
 }
 
 #achievement {
@@ -613,6 +628,10 @@ img{
     font-size: 1.5rem;
     line-height: 1.6;
     opacity: 0.8;
+}
+
+#contact{
+    background-image: url(images/background5.jpg);
 }
 
 #contact .contact{
@@ -737,7 +756,7 @@ img{
 
 @keyframes text_reveal1{
     100%{
-        color:#08d9d6;
+        color:#cc7d37;
     }
 }
 
