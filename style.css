@@ -165,7 +165,7 @@ img{
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-    padding: 12px 25px;
+    padding: 12px 15px;
     border-radius: 6px;
     display: block;
     position: relative;
@@ -660,6 +660,88 @@ img{
     font-size: 1.5rem;
     line-height: 1.6;
     opacity: 0.8;
+}
+
+#blog {
+background-image: url(./images/background5.jpg);
+padding: 100px 0;
+text-align: center;
+}
+
+#blog .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+#blog .blog-header h1{
+text-align: center;
+margin-bottom: 0px;
+}
+
+
+#blog .blog-content {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+.blog-card {
+background: #1c1c1c;
+padding: 35px 30px;
+width: 320px;
+text-align: center;
+border-radius: 10px;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.blog-card:hover {
+transform: translateY(-10px);
+box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+
+.blog-card h2 {
+color: #fff;
+font-size: 18px;
+margin-bottom: 10px;
+}
+
+
+.blog-date {
+font-size: 12px;
+color: #ff4a57;
+margin-bottom: 15px;
+}
+
+
+.blog-card p {
+color: #ccc;
+font-size: 14px;
+line-height: 1.6;
+}
+
+
+.blog-btn {
+display: inline-block;
+margin-top: 15px;
+color: #ff4a57;
+font-size: 13px;
+text-decoration: none;
+border-bottom: 1px solid transparent;
+}
+
+
+.blog-btn:hover {
+border-bottom: 1px solid #ff4a57;
 }
 
 #contact{
