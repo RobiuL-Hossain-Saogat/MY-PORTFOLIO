@@ -120,7 +120,7 @@ img{
     top: 10px;
     left: 10px;
     margin: 0;
-    padding: 0;
+    padding: 0 25px;
     z-index: 2000;
     color: rgb(244, 228, 176);
     font-size: 3rem;
@@ -424,7 +424,7 @@ img{
 }
 
 #projects{
-    background:#846b71;
+    background-image: url(./images/background5.jpg);
 }
 
 #projects .projects{
@@ -487,6 +487,38 @@ img{
     height: 300px;
     overflow: hidden;
     position: relative;
+}
+
+#projects .project-buttons{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    opacity: 0;                 /* শুরুতে hide */
+    visibility: hidden;
+    transition: 0.3s ease;
+    z-index: 2;
+}
+
+#projects .project-img:hover .project-buttons{
+    opacity: 1;
+    visibility: visible;
+}
+
+#projects .project-buttons .btn{
+    padding: 6px 14px;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid red;
+    background: transparent;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+#projects .project-buttons .btn:hover{
+    background: red;
 }
 
 #projects .project-img::after{
@@ -574,7 +606,7 @@ img{
 }
 
 .achievement-bg {
-    background:#846b71;
+    background-image: url(./images/background5.jpg);
 }
 
 #achievement {
