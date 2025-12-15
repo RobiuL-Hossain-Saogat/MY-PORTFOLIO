@@ -1030,8 +1030,7 @@ border-bottom: 1px solid #ff4a57;
 
         #header .brand h1 {
             position: absolute;
-            top: 5px;
-            left: 5px;
+            left: 30px;
         }
 
         #header .nav-list ul{
