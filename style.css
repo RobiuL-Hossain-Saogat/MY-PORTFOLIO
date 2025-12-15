@@ -1095,7 +1095,23 @@ border-bottom: 1px solid #ff4a57;
             position: absolute;
             right: 10px;
         }
+}
+
+@media (min-width: 768px){
+        #home h1:nth-child(3){
+            font-size: 5rem;
+        }
+
+        #header .hamb{
+        position: relative;
+        left: 35px;
     }
+
+        #header .brand h1 {
+            position: absolute;
+            right: 10px;
+        }
+}
 
 @media only screen and (max-width: 767px) {
 
