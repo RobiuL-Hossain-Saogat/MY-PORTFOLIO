@@ -1064,6 +1064,7 @@ border-bottom: 1px solid #ff4a57;
     #home .my-img {
         order: -1;
         width: 180px;
+        margin-top: 150px;
         margin-bottom: 25px;
     }
 
