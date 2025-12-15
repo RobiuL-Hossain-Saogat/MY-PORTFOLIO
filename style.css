@@ -9,6 +9,12 @@ html{
     font-family: 'Montserrat', sans-serif, 'Clicker Script';
     scroll-behavior: smooth;
 }
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
 
 a{
     text-decoration: none;
@@ -122,7 +128,7 @@ img{
     margin: 0;
     padding: 0;
     z-index: 2000;
-    color: rgb(55, 33, 25);
+    color: rgb(63, 45, 38);
     font-size: 3rem;
 }
 
@@ -143,7 +149,7 @@ img{
 #header .nav-list ul{
     list-style: none;
     position: absolute;
-    background-color: rgb(31, 30, 30);
+    background-color: rgb(189, 173, 173);
     border-radius: 6px;
     width: 60vw;
     height: 70vh;
@@ -305,7 +311,7 @@ img{
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border: 5px solid rgb(64, 35, 35);
+    border: 5px solid rgb(120, 120, 120);
     z-index: 1;           
 }
 
@@ -385,7 +391,7 @@ img{
 #educations .service-item{
     flex-basis: 80%;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 30px;
@@ -868,19 +874,19 @@ border-bottom: 1px solid #ff4a57;
 
 @keyframes text_reveal{
     100%{
-        color:#000000;
+        color:#473939;
     }
 }
 
 @keyframes text_reveal1{
     100%{
-        color:#e53232;
+        color:#c21711eb;
     }
 }
 
 @keyframes text_reveal2{
     100%{
-        color:#231a60;
+        color:#211282;
     }
 }
 
@@ -1021,6 +1027,13 @@ border-bottom: 1px solid #ff4a57;
        #header .hamb{
             display: none;
         }
+
+        #header .brand h1 {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+
         #header .nav-list ul{
             position: initial;
             display: block;
@@ -1034,7 +1047,7 @@ border-bottom: 1px solid #ff4a57;
         }
 
         #header .nav-list ul li a{
-            font-size: 1.8rem;
+            font-size: 1.5rem;
         }
 
         #header .nav-list ul a::after{
@@ -1049,15 +1062,52 @@ border-bottom: 1px solid #ff4a57;
             flex-basis: 22%;
             margin: 1.5%;
         }
+        
     }
     @media (min-width: 1024px){
         #home h1:nth-child(3){
             font-size: 5rem;
         }
+
+        #header .hamb{
+        position: relative;
+        left: 35px;
+    }
+
+        #header .brand h1 {
+            position: absolute;
+            right: 10px;
+        }
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media (min-width: 820px){
+        #home h1:nth-child(3){
+            font-size: 5rem;
+        }
+
+        #header .hamb{
+        position: relative;
+        left: 35px;
+    }
+
+        #header .brand h1 {
+            position: absolute;
+            right: 10px;
+        }
+    }
+
+@media only screen and (min-width: 767px) {
+
+    #header .hamb{
+        position: relative;
+        left: 35px;
+    }
+
+    #header .brand h1 {
+        position: absolute;
+        right: 10px;
+    }
 
     #home .home {
         flex-direction: column;
