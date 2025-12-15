@@ -1052,3 +1052,32 @@ border-bottom: 1px solid #ff4a57;
         }
     }
 }
+
+@media only screen and (max-width: 767px) {
+
+    #home .home {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    #home .my-img {
+        order: -1;
+        width: 180px;
+        margin-bottom: 25px;
+    }
+
+    #home .home > div:first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #home h1 {
+        text-align: center;
+    }
+
+    #home .cta {
+        margin: 10px 100px 300px 100px;
+    }
+}
