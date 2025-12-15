@@ -44,9 +44,9 @@ img{
 .cta{
     display: inline-block;
     padding: 10px 30px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     background-color: transparent;
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 30px;
     font-size: 2rem;
     text-transform: uppercase;
@@ -57,8 +57,8 @@ img{
 }
 
 .cta:hover{
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
 }
 
 .brand h1{
@@ -122,8 +122,12 @@ img{
     margin: 0;
     padding: 0;
     z-index: 2000;
-    color: rgb(244, 228, 176);
+    color: rgb(55, 33, 25);
     font-size: 3rem;
+}
+
+#header .brand h1 span {
+    color: rgb(148, 25, 25);
 }
 
 #header .nav-bar{
@@ -163,7 +167,7 @@ img{
     font-weight: 500;
     letter-spacing: .2rem;
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     text-transform: uppercase;
     padding: 12px 15px;
     border-radius: 6px;
@@ -203,7 +207,7 @@ img{
 #header .hamb{
     height: 60px;
     width: 60px;
-    border: 3px solid rgb(255, 255, 255);
+    border: 3px solid rgb(0, 0, 0);
     border-radius: 50%;
     position: absolute;
     top: 0;
@@ -220,7 +224,7 @@ img{
     height: 2px;
     width: 30px;
     position: relative;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     z-index: -1;
 }
 
@@ -230,7 +234,7 @@ img{
     height: 100%;
     width: 100%;
     border-radius: 50%;
-    border:3px solid white;
+    border:3px solid rgb(0, 0, 0);
     animation: hamb_puls 1s ease infinite;
 }
 
@@ -242,7 +246,7 @@ img{
     height: 100%;
     width: 100%;
     left: 0;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     transition: .3s ease;
     transition-property: top, bottom;
 }
@@ -262,8 +266,8 @@ img{
 }
 
 #home{
-    background-image: url(./images/background.jpg);
-
+    background-image: url(./images/background4.jpg);
+    background-size: cover;
     background-position: top center;
 }
 
@@ -301,7 +305,7 @@ img{
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border: 5px solid rgb(156, 32, 32);
+    border: 5px solid rgb(64, 35, 35);
     z-index: 1;           
 }
 
@@ -864,19 +868,19 @@ border-bottom: 1px solid #ff4a57;
 
 @keyframes text_reveal{
     100%{
-        color:#f0e8ea;
+        color:#000000;
     }
 }
 
 @keyframes text_reveal1{
     100%{
-        color:#cc7d37;
+        color:#e53232;
     }
 }
 
 @keyframes text_reveal2{
     100%{
-        color:#f0db71;
+        color:#231a60;
     }
 }
 
