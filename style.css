@@ -1097,7 +1097,7 @@ border-bottom: 1px solid #ff4a57;
         }
     }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (max-width: 767px) {
 
     #header .hamb{
         position: relative;
