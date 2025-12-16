@@ -1191,6 +1191,7 @@ border-bottom: 1px solid #ff4a57;
     #home .home > div:first-child{
         flex: 0;
         margin-left: 0px;
+        margin-top: 0;
     }
 
     #home .home {
@@ -1269,7 +1270,7 @@ border-bottom: 1px solid #ff4a57;
 
 @media (max-width: 970px){
         #home h1:nth-child(3){
-            font-size: 4rem;
+            font-size: 3rem;
         }
         
         #header .hamb{
@@ -1281,7 +1282,7 @@ border-bottom: 1px solid #ff4a57;
         }
 
         #home h1{
-            font-size: 4rem;
+            font-size: 3rem;
         }
 
         #home p{
