@@ -303,6 +303,16 @@ img{
     justify-content: flex-start;
 }
 
+#home .home > div:first-child{
+    flex: 1;
+    margin-left: 25px;
+}
+
+#home p{
+    font-size: 1.8rem;
+    font-family: 'Italiano','sans-serif';
+}
+
 #home .social-icon{
     top: 1px;
     display: flex;
@@ -1161,6 +1171,12 @@ border-bottom: 1px solid #ff4a57;
     #header .hamb{
         position: relative;
     }
+
+    #home .home > div:first-child{
+        flex: 0;
+        margin-left: 0px;
+    }
+
 
 
     #home .home {
