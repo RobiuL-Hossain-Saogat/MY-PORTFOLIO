@@ -121,10 +121,12 @@ img{
     transition: .3s ease background-color;
 }
 
+#header .brand{
+    flex-shrink: 0;
+}
+
+
 #header .brand h1 {
-    position: absolute;
-    top: 10px;
-    left: 10px;
     margin: 0;
     padding: 0;
     z-index: 2000;
@@ -151,7 +153,7 @@ img{
     position: absolute;
     background-color: rgb(189, 173, 173);
     border-radius: 6px;
-    width: 60vw;
+    width: 80vw;
     height: 70vh;
     right: -100%;
     top: 58px;
@@ -162,7 +164,24 @@ img{
     z-index: 1;
     overflow-x: hidden;
     transition: .5s ease ;
+    flex-wrap: nowrap;
 }
+
+#header .nav-list ul li a{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    line-height: 2;
+    padding: 0 10px;
+}
+
+
+#header .nav-list ul a i {
+    font-size: 1.4rem;
+    margin-right: 0px;
+    vertical-align: middle;
+}
+
 
 #header .nav-list ul.active{
     right: 0;
@@ -1067,18 +1086,37 @@ border-bottom: 1px solid #ff4a57;
             display: none;
         }
 
-        #header .brand h1 {
-            position: absolute;
-            left: 50px;
-            margin: auto;
+        #header .brand h1{
+            position: relative;   /* absolute না */
+            left: 0;
+            font-size: 2.8rem;
+        }
+
+        #header .nav-bar{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
         #header .nav-list ul{
+            position: static;     /* important */
+            right: 0;
+            height: auto;
+            width: auto;
+            background: transparent;
+            flex-direction: row;
+            display: flex;        /* 🔥 most important */
+        }
+
+
+        #header .nav-list ul a i {
             position: initial;
-            display: block;
+            display: inline-block;
             height: auto;
             width: fit-content;
             background: transparent;
+            font-size: 1.4rem;
+            margin-right: 0px;
         }
 
         #header .nav-list ul li{
@@ -1108,11 +1146,11 @@ border-bottom: 1px solid #ff4a57;
             font-size: 5rem;
         }
         
-        #header .nav-bar{
-            position: absolute;
-            top:20px;
+        #header .hamb{
+            position: relative;
         }
     }
+
 }
 
 
@@ -1122,7 +1160,6 @@ border-bottom: 1px solid #ff4a57;
 
     #header .hamb{
         position: relative;
-        left: 35px;
     }
 
 
@@ -1168,4 +1205,18 @@ border-bottom: 1px solid #ff4a57;
         margin: 10px 100px 300px 100px;
     }
 
+}
+
+@media only screen and (max-width: 1199px){
+    #header .nav-list ul li a{
+        padding: 12px 0;
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1199px){
+    #header .hamb{
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
