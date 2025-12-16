@@ -1141,6 +1141,10 @@ border-bottom: 1px solid #ff4a57;
             display: none;
         } 
 
+        #home .text{
+            margin-top: 80px;
+        }
+
         #home h1:nth-child(3){
             font-size: 5rem;
         }
@@ -1153,11 +1157,23 @@ border-bottom: 1px solid #ff4a57;
     }
     @media (max-width: 1024px){
         #home h1:nth-child(3){
-            font-size: 5rem;
+            font-size: 3rem;
         }
         
         #header .hamb{
             position: relative;
+        }
+
+        #home .text{
+            margin-top: 100px;
+        }
+
+        #home h1{
+            font-size: 3rem;
+        }
+
+        #home p{
+            font-size: 1.5rem;
         }
     }
 
@@ -1176,8 +1192,6 @@ border-bottom: 1px solid #ff4a57;
         flex: 0;
         margin-left: 0px;
     }
-
-
 
     #home .home {
         flex-direction: column;
@@ -1228,6 +1242,22 @@ border-bottom: 1px solid #ff4a57;
         padding: 12px 0;
         font-size: 1.8rem;
     }
+
+    #home h1:nth-child(3){
+        font-size: 4rem;
+    }
+
+    #home .text{
+        margin-top: 90px;
+    }
+
+    #home h1{
+        font-size: 4rem;
+    }
+
+    #home p{
+        font-size: 1.7rem;
+    }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1199px){
@@ -1235,4 +1265,26 @@ border-bottom: 1px solid #ff4a57;
         top: 50%;
         transform: translateY(-50%);
     }
+}
+
+@media (max-width: 970px){
+        #home h1:nth-child(3){
+            font-size: 4rem;
+        }
+        
+        #header .hamb{
+            position: relative;
+        }
+
+        #home .text{
+            margin-top: 120px;
+        }
+
+        #home h1{
+            font-size: 4rem;
+        }
+
+        #home p{
+            font-size: 1.5rem;
+        }
 }
