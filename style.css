@@ -1159,6 +1159,9 @@ border-bottom: 1px solid #ff4a57;
             margin: 1.5%;
         }
         
+        .blog-card {
+            margin-bottom: 150px;
+        }
     }
     @media (max-width: 1024px){
         #home h1:nth-child(3){
@@ -1179,6 +1182,10 @@ border-bottom: 1px solid #ff4a57;
 
         #home p{
             font-size: 1.5rem;
+        }
+
+        .blog-card {
+            margin-bottom: 150px;
         }
     }
 
