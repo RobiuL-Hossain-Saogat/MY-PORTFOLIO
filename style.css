@@ -1249,6 +1249,10 @@ border-bottom: 1px solid #ff4a57;
         margin: 10px 100px 300px 100px;
     }
 
+    #projects .project-item{
+        margin-top: 0px;
+    }
+
     #projects .project-info h1{
         font-size: 1.8rem;
         font-weight: 500;
@@ -1262,6 +1266,14 @@ border-bottom: 1px solid #ff4a57;
 
     #projects .project-info p{
         font-size: 1.2rem;
+    }
+
+    #contact .contact{
+        flex-direction: column;
+        padding: 100px 0;
+        align-items: center;
+        justify-content: center;
+        min-width: 20vh;
     }
 
 }
