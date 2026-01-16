@@ -725,7 +725,7 @@ img{
 .ach-icon {
     font-size: 45px;
     margin-bottom: 15px;
-    color: #00c6ff;
+    color: #ffffff;
     transition: 0.3s ease;
 }
 
@@ -739,6 +739,7 @@ img{
     font-size: 1.5rem;
     line-height: 1.6;
     opacity: 0.8;
+    font-weight: bold;
 }
 
 #blog {
